@@ -1,0 +1,28 @@
+﻿<Window x:Class="Button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Button"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400">
+    <Grid>
+        <Button x:Name="Button1" 
+            Style="{StaticResource btnDownload}"
+            Width="200"
+            Height="50"
+            Cursor="Hand" 
+            ToolTip="Click Here To Download" 
+            ClickMode="Release" 
+            Click="Button1_Click" >
+            <Button.Content>
+                <StackPanel>
+                    <TextBlock x:Name="Button1Text1" Text="Download Now" FontSize="18" />
+                    <TextBlock x:Name="Button1Text2" Text="Progress: 0%" FontSize="12" Foreground="Gainsboro" />
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>
+
+
